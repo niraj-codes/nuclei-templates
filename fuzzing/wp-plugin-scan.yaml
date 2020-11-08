@@ -1,3 +1,4 @@
+# plugins can be identified through /wp-content/plugins/ in burpsuite sitemap too
 id: wp-plugin-scan
 info:
   name: Wordpress Plugin Scanner
@@ -18,7 +19,7 @@ requests:
 
     raw:
       - |
-        GET /plugin_wordlist HTTP/1.1
+        GET plugin_wordlist HTTP/1.1
         Host: {{Hostname}}
         Accept: application/json, text/plain, */*
         Accept-Language: en-US,en;q=0.5
